@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="img/logo.png" type="">
+    <title>Setting</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style_setting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        /* The switch - the box around the slider */
+        
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+        /* Hide default HTML checkbox */
+        
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        /* The slider */
+        
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+        
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+        
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+        /* Rounded sliders */
+        
+        .slider.round {
+            border-radius: 34px;
+        }
+        
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header style="width: 100%; height: 70px; background-color: #181C25">
+        <nav>
+            <a style="margin-left: 15px;" href="index.html">
+                <img src="img/logo.png" alt="" style="width: 50px; margin: 10px;">
+                <img src="img/Name.png" alt="" style="height: 25px;">
+            </a>
+            <a href="#">
+                <img src="img/line.png" alt="" style="width: 23px; margin-left: 120px;">
+            </a>
+            <input type="text" style=" margin-left: 40px; width: 700px; height: 20px; background-color: #181C25; font-size: 20px ; color: #ffffff;">
+
+            <div class="dropdown" style="margin-left: 400px;">
+                <button style="background-color: #181C25;"><img style="width: 20px;" src="img/box.png" alt=""></button>
+                <div class="dropdown-options">
+                    <a href="#">Dashboard</a>
+                    <a href="#">Setting</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+
+            <img src="img/ling.png" alt="" style="height: 40px;">
+
+            <div class="dropdown">
+                <button style="background-color: #181C25;"><img style="width: 20px;" src="img/messger.png" alt=""></button>
+                <div class="dropdown-options">
+                    <a href="#">Dashboard</a>
+                    <a href="#">Setting</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+
+            <img src="img/ling.png" alt="" style="height: 40px;">
+
+            <div class="dropdown">
+                <button style="background-color: #181C25;"><img style="width: 20px;" src="img/Group 3.png" alt=""></button>
+                <div class="dropdown-options">
+                    <a href="#">Dashboard</a>
+                    <a href="#">Setting</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+
+            <a href="#">
+                <img src="img/Ellipse 5.png" alt="" style="width:40px; margin-left: 40px ">
+            </a>
+
+            <div class="dropdown">
+                <button style="background-color: #181C25;"><p style="color: #fff;">
+          Henry Klein <img src="img/Polygon 1.png" alt="" style="width: 10px; margin-left: 10px; ">
+        </p></button>
+                <div class="dropdown-options">
+                    <a href="#">Dashboard</a>
+                    <a href="#">Setting</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- -------------------------------------------Ead Head------------------------ -->
+
+
+    <div class="container-fluid" style="margin-right: ;">
+        <div class="row content" style="background-color: black;">
+            <div class="col-sm-3 sidenav hidden-xs" style="background-color: #181C25; width: 300px;">
+
+
+
+                <ul class="nav nav-pills nav-stacked">
+                    <li>
+                        <a href="#">
+                            <img src="img/Ellipse 5.png" alt="" style="width: 40px;">
+                            <img src="img/king.png" alt="" style="width: 40px;">
+                            <img src="img/Group 1.png" alt="" style="width: 5px; margin-left: 140px;">
+                        </a>
+                    </li>
+                    <br>
+                    <u style="color: #fff;">Navigation</u>
+                    <br>
+                    <br>
+                    <li>
+                        <a href="#" style="color: #fff;">
+
+                            <img src="img/Ellipse 5.png" alt="" style="width: 35px; margin-right:10px; ">Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" style="color: #fff;">
+                            <img src="img/Ellipse 5.png" alt="" style="width: 35px; margin-right:10px; ">Setting
+                        </a>
+                    </li>
+
+                </ul><br>
+            </div>
+            <br>
+
+            <!-- ------------------------------NAV---------------------------- -->
+
+            <section class="herosec">
+                <u style="margin-left: 200px;">Settings</u>
+                <br>
+                <br>
+                <u style="margin-left: 300px;">Account</u>
+                <br>
+                <br>
+                <p style="margin-left: 400px;">Security</p>
+                <p style="margin-left: 400px;">Notification</p>
+                <label class="switch" style="margin-left: 500px;">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+                <p style="margin-left: 400px;">Privacyt</p>
+                <br>
+                <u style="margin-left: 300px;">Support & About</u>
+                <p style="margin-left: 400px;">Help & Support</p>
+                <p style="margin-left: 400px;">Terms and Policies</p>
+            </section>
+
+
+</body>
+
+</html>
